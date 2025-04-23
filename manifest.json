@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Hide AI Chat Button",
+    "version": "1.0",
+    "description": "Esconda o botão de chat da Estácio no Portal do aluno",
+    "permissions": [],
+    "host_permissions": [
+      "https://estudante.estacio.br/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://estudante.estacio.br/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
